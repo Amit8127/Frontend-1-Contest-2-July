@@ -14,6 +14,7 @@
     display: flex;
     align-items: center;
     position: sticky;
+    flex-wrap: wrap;
     top: 0px;
     justify-content: space-between;
     font-size: 23px;
@@ -70,7 +71,7 @@
 
 .sec-1 {
     width: 100%;
-    height: 500px;
+    height: 742px;
     background-image: url("images/Rectangle\ 31.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -78,6 +79,7 @@
     border-radius: 30px;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: space-around;
     font-size: 23px;
     margin-bottom: 20px;
@@ -87,17 +89,16 @@
     font-family: 'Poppins', sans-serif;
     color: #184655;
     font-size: 45px;
-    padding: 0px;
-    margin: 0px;
+    font-weight: 700;
 }
 
 .search {
     height: 45px;
-    border-radius: 10px;
+    width: 546px;
+    border-radius: 19px;
     background-color: white;
     display: flex;
     overflow: hidden;
-    justify-content: space-between;
 }
 
 .search>img {
@@ -109,7 +110,16 @@
 .search>input {
     border: none;
     width: 300px;
+    flex: 2;
+    outline: none;
 }
+
+.search>button {
+    border: none;
+    width: 300px;
+    flex: 1;
+}
+
 
 .search>button {
     background-color: #184655;
@@ -124,6 +134,9 @@
 .tags {
     width: 350px;
     color: #53748C;
+    padding-top: 10px;
+    font-size: 21px;
+    font-weight: 400;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -159,17 +172,21 @@
 }
 
 .sec2-col2>h1 {
-    font-size: 50px;
     margin: 0;
     padding: 10px;
+    color: #404040;
+    font-size: 42px;
+    font-weight: 500;
 }
 
 .sec2-p1 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    color: gray;
     padding: 10px;
+    color: rgba(111, 110, 110, 0.84);
+    font-size: 25px;
+    font-weight: 500;
 }
 
 .sec2-p2 {
@@ -184,44 +201,44 @@
 }
 
 .cards {
-    max-width: 100%;
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
-    padding-bottom: 20px;
-    column-gap: 20px;
+    margin: 30px;
+    /* padding-bottom: 20px;
+    column-gap: 20px; */
 }
 
 .card {
     box-shadow: 2px 2px 10px gray;
     overflow: hidden;
     border-radius: 20px;
-    position: relative;
+    width: 431.532px;
 }
 
-.card img {
+.card>img {
+    width: 431.532px;
+    height: 272.614px;
     padding: 0px;
     border-radius: 20px;
-    width: 100%;
-    
+
 }
 
 .title {
-    overflow: hidden;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 18px;
-    width: 100%;
-    height: 36px;
-    padding: 10px;
+    color: #4A4848;
+    font-family: Roboto;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
 }
 
 .sec3-p1 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: gray;
-    padding: 10px;
+    color: rgba(111, 110, 110, 0.84);
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 500;
 }
 
 .desc {
@@ -251,6 +268,7 @@
     background-size: cover;
     border-radius: 30px;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
     font-size: 23px;
